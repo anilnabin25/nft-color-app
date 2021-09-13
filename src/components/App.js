@@ -64,7 +64,7 @@ class App extends Component {
       .send({from: this.state.account})
       .once('receipt', (receipt) => {
         this.setState({
-          colors: [...this.state.colors.color]
+          colors: [...this.state.colors, color]
         })
       })
   }
